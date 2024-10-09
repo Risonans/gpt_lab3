@@ -46,6 +46,11 @@ const homePage = () => {
 
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);
+
+  /* Nick  */
+  const blogNode = rootNode.querySelector(".blog");
+  initBlog(blogNode);
+  /* Nick  */
 };
 
 export default homePage;
