@@ -4,6 +4,8 @@ import initBrands from "./../components/initBrands.js";
 import initWhatIsGpt from "./../components/initWhatIsGpt.js";
 import initFutureHere from "./../components/initFutureHere.js";
 import initBurger from "./../components/initBurger.js";
+import initFooter1 from "../components/initFooter1.js";
+import { footer1Data } from "../../mockData/footer1Data.js";
 
 const createHomePageTemplate = (rootNode) => {
   // формируем шаблон базовых секций для дальнейшего монтирования в них
@@ -14,6 +16,7 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section brands_section"></section>
     <section class="section what_is_chatgpt_section"></section>
     <section class="section future_here"></section>
+    <section class="Footer"></section>
   `;
 
   rootNode.insertAdjacentHTML("beforeend", template); 
@@ -43,6 +46,10 @@ const homePage = () => {
   // инициализация раздела "Будущее наступило" с мок датой
   const futureHereNode = rootNode.querySelector(".future_here");
   initFutureHere(futureHereNode);
+
+  // инициализация раздела "Шагнуть в будущее"
+  const footer1Node = rootNode.querySelector(".Footer");
+  initFooter1(footer1Node);
 
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);
