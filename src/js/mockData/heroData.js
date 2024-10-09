@@ -9,6 +9,11 @@ export const heroCtaButtons = [
   },
 ];
 
+export const signUp = {
+  src: "./assets/img/SignUp.png",
+  alt: "sign up",
+}
+
 export const illustration = {
   src: "./assets/img/Illustration.svg",
   alt: "gpt3",
