@@ -14,6 +14,7 @@ export const createDescriptionTemplate = (description) => {
   `;
 };
 
+/* Слава */
 export const createSignUpTemplate = ({src, alt, type, title}) => {
   return `
     <div class="left__social_approve">
@@ -22,6 +23,7 @@ export const createSignUpTemplate = ({src, alt, type, title}) => {
     </div>
   `;
 }
+/* Слава */
 
 export const createInputTemplate = ({ type, title }) => {
   switch (type) {

@@ -9,12 +9,14 @@ export const heroCtaButtons = [
   },
 ];
 
+/* Слава */
 export const signUp = {
   src: "./assets/img/SignUp.png",
   alt: "sign up",
   type: "people",
   title: "1,600 человек запросило доступ за последние  24 часа",
 };
+/* Слава */
 
 export const illustration = {
   src: "./assets/img/Illustration.svg",
