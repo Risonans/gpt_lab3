@@ -14,6 +14,15 @@ export const createDescriptionTemplate = (description) => {
   `;
 };
 
+export const createSignUpTemplate = ({src, alt, type, title}) => {
+  return `
+    <div class="left__social_approve">
+      <img src="${src}" alt="${alt}"/ >
+      <p class="${type}">${title}</p>
+    </div>
+  `;
+}
+
 export const createInputTemplate = ({ type, title }) => {
   switch (type) {
     case "input":
@@ -54,11 +63,13 @@ export const createIllustrationTemplate = ({ src, alt }) => {
 };
 
 export const heroTemplate = ({
+  signUp,
   heroCtaButtons,
   illustration,
   header,
   description,
 }) => {
+  const signUpTemplate = createSignUpTemplate(signUp);
   const headerTemplate = createHeaderTemplate(header);
   const descriptionTemplate = createDescriptionTemplate(description);
   const buttonsTemplate = createInputsTemplate(heroCtaButtons);
@@ -68,7 +79,8 @@ export const heroTemplate = ({
     <div class="hero_section__left">
         ${headerTemplate}
         ${descriptionTemplate}
-        ${buttonsTemplate}       
+        ${buttonsTemplate}
+        ${signUpTemplate}       
     </div>
     <div class="hero_section__right">
         ${illustrationTemplate}

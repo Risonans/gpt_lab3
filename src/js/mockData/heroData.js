@@ -12,7 +12,9 @@ export const heroCtaButtons = [
 export const signUp = {
   src: "./assets/img/SignUp.png",
   alt: "sign up",
-}
+  type: "people",
+  title: "1,600 человек запросило доступ за последние  24 часа",
+};
 
 export const illustration = {
   src: "./assets/img/Illustration.svg",
@@ -28,6 +30,7 @@ export const description =
 export const heroData = {
   header,
   description,
+  signUp,
   heroCtaButtons,
   illustration,
 };
