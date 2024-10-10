@@ -8,11 +8,10 @@ export const footer3Template=({
 }) => {
     const textTemplate= createTextTemplate(text);
 
-    const resultTemplate =`
+    const resultTemplate = `
         <div class="Footer_Footer_Footer">
             ${textTemplate}
         </div>  
         `;
     return resultTemplate;
-
-}
+};
