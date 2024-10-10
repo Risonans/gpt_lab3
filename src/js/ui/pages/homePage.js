@@ -8,6 +8,7 @@ import initBlog from "./../components/initBlog.js";
 import initFooter1 from "../components/initFooter1.js";
 import initFooter2 from "../components/initFooter2.js";
 import initFooter3 from "../components/initFooter3.js";
+import initResearch from "../components/initResearch.js";
 
 
 
