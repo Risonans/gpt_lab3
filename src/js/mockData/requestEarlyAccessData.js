@@ -5,7 +5,7 @@ const requestEarlyAccessLeftData = {
 
 const requestEarlyAccessRightData = [
     {
-        content: "Запроси ранний доступ"
+        requestIt: "Запроси ранний доступ"
     },
     {
         header: "Превосходя все ожидания"
