@@ -6,7 +6,7 @@ export const rightContainerTemplate = ({ title, description }) => {
       </h3>
       <p class="container__content">
           ${description}
-      </p>
+      </p> 
     </div>
 `;
 

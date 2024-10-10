@@ -513,6 +513,37 @@ p {
 /* F */
 
 
+/* Nick */
+/* Шрифт для каритинки №1*/
+h4 {
+  font-family: "ManropeBold", sans-serif;
+  color: #fff;
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Шрифт для каритинок №2-5*/
+h5 {
+  font-family: "ManropeBold", sans-serif;
+  color: #fff;
+  font-size: 19px;
+  margin: 0;
+}
+
+/* Шрифт для дат */
+h6 {
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+/* Ссылки */
+.blog_articles_nav {
+  font-family: "ManropeBold", sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+
+
 /* Запросите ранний доступ */
 
 .sign_up_and_research {
@@ -554,6 +585,103 @@ p {
   background: #000000;
   border-radius: 40px;
 }
+
+.section {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  gap: 50px;
+}
+
+.con_2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.con_3 {
+  display: flex;
+  flex-direction: column;
+}
+/* ?--------------------------------------------- */
+.blog_articles_first {
+  width: 418px;
+  background: #042c54;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 695px;
+}
+
+.blog_articles {
+  width: 327px;
+  background: #042c54;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 323px;
+  margin-bottom: 47px;
+}
+
+.blog_articles_img_first {
+  width: 419px;
+  height: 287px;
+}
+
+.blog_articles_img {
+  width: 329px;
+  height: 130px;
+}
+
+.blog_articles_data {
+  /* font-weight: 300; */
+  font-size: 12px;
+  margin-bottom: 1px;
+  opacity: 0.7;
+  color: #fff;
+  /* font-family: 'Manrope'; */
+}
+
+.blog_text_1 {
+  padding: 29px 30px;
+}
+
+.blog_text {
+  padding: 7px 26px 14px 17px;
+}
+
+.blog_articles_title_1 {
+  font-size: 25px;
+  margin-bottom: 187px;
+}
+
+.blog_articles_title {
+  font-size: 19px;
+  margin-bottom: 13px;
+}
+
+.blog_articles_nav_1 {
+  margin-bottom: 27px;
+}
+
+.blog_articles_nav {
+  margin-bottom: 14px;
+}
+
+.blog_articles_link_1 {
+  margin-bottom: 27px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.blog_articles_link {
+  margin-bottom: 14px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+
+
+/* Nick */
 
 /* k */
 .container {
