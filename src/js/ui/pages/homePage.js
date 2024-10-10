@@ -4,6 +4,7 @@ import initBrands from "./../components/initBrands.js";
 import initWhatIsGpt from "./../components/initWhatIsGpt.js";
 import initFutureHere from "./../components/initFutureHere.js";
 import initBurger from "./../components/initBurger.js";
+import initBlog from "./../components/initBlog.js";
 import initFooter1 from "../components/initFooter1.js";
 import { footer1Data } from "../../mockData/footer1Data.js";
 
@@ -16,6 +17,7 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section brands_section"></section>
     <section class="section what_is_chatgpt_section"></section>
     <section class="section future_here"></section>
+    <section class="blog"></section>
     <section class="Footer"></section>
   `;
 
@@ -47,6 +49,11 @@ const homePage = () => {
   const futureHereNode = rootNode.querySelector(".future_here");
   initFutureHere(futureHereNode);
 
+  /* Nick  */
+  const blogNode = rootNode.querySelector(".blog");
+  initBlog(blogNode);
+  /* Nick  */
+
   // инициализация раздела "Шагнуть в будущее"
   const footer1Node = rootNode.querySelector(".Footer");
   initFooter1(footer1Node);
@@ -54,10 +61,7 @@ const homePage = () => {
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);
 
-  /* Nick  */
-  const blogNode = rootNode.querySelector(".blog");
-  initBlog(blogNode);
-  /* Nick  */
+
 };
 
 export default homePage;
