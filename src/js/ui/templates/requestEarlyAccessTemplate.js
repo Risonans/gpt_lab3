@@ -18,7 +18,7 @@ export const createRequestEarlyAccessRightTemplate = (requestEarlyAccessRightDat
             result += `<p class="right__content">${item.content}</p>`;
         }
         if (item.type === "right__cta") {
-            result += `<button class="right__cta">${item.title}</button>`;
+            result += `<a href="#" class="right__cta">${item.title}</a>`; // Заменено на ссылку
         }
         return result;
     }).join('');
