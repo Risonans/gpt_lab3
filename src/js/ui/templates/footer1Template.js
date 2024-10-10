@@ -31,4 +31,4 @@ export const footer1Template=({
         `;
     return resultTemplate;
 
-}
+};
