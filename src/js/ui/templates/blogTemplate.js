@@ -1,6 +1,6 @@
 export const createBlog_card_1_Template = ({ src, data, title_1, button: {href, articles} }) => {
   return  `
-    
+  
     <div class="blog_articles_first">
       <img src="${src}" class="blog_articles_img_first">
       <div class="blog_text_1">
