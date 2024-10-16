@@ -950,6 +950,8 @@ h13{
   }
 
   .header .header__logo .logo__link img {
+    width: 100%;
+    margin-left: 5rem;
   }
 
   .header .header__right {
@@ -966,6 +968,7 @@ h13{
     height: 100vh;
     z-index: 9999;
     background: #031b34;
+    visibility: hidden;
   }
 
   .header .header__menu {
@@ -994,6 +997,7 @@ h13{
     flex-direction: column;
     justify-content: center;
     column-gap: 0;
+    width: 60%;
   }
 
   .hero_section .hero_section__left {
