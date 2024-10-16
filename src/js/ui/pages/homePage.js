@@ -5,6 +5,7 @@ import initWhatIsGpt from "./../components/initWhatIsGpt.js";
 import initFutureHere from "./../components/initFutureHere.js";
 import initBurger from "./../components/initBurger.js";
 import initBlog from "./../components/initBlog.js";
+import initExpect from "../components/initExpect.js";
 import initFooter1 from "../components/initFooter1.js";
 import initFooter2 from "../components/initFooter2.js";
 import initFooter3 from "../components/initFooter3.js";
@@ -21,6 +22,7 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section brands_section"></section>
     <section class="section what_is_chatgpt_section"></section>
     <section class="section future_here"></section>
+    <section class="section request_early_access_section"></section>
     <section class="sign_up_and_research"></section>
     <section class="blog"></section>
     <section class="Footer"></section>
@@ -55,6 +57,10 @@ const homePage = () => {
   // инициализация раздела "Будущее наступило" с мок датой
   const futureHereNode = rootNode.querySelector(".future_here");
   initFutureHere(futureHereNode);
+
+  // инициализация раздела "Превосходя все ожидания"
+  const expectNode = rootNode.querySelector(".request_early_access_section");
+  initExpect(expectNode);
 
   // инициализация формы "регистрации и исследования"
   const researchNode = rootNode.querySelector(".sign_up_and_research");
