@@ -1,33 +1,38 @@
-export const png = {
-    src:"../lab1_gpt4/assets/img/logo.svg",
+export const collum1 = {
+    src: "./assets/img/logo.svg",
     alt: "Логотип",
-    type:"street",
-    text:"ул. Профессора Поздеева, 13, к.Г, Пермь, Пермский край, 614013 Все права защищены",
-    
+    type: "street",
+    title: "ул. Профессора Поздеева, 13, к.Г, Пермь, Пермский край, 614013 Все права защищены",
 };
-export const secondFooter1 ={
-    header:"Ссылки",
-    content1:"Оверонны",
-    content2:"Соц. сети",
-    content3:"Счетчики",
-    content4:"Контакты",
+
+export const collum2 = {
+    title1: "Ссылки",
+    title2: "Оверонны",
+    title3: "Соц. сети",
+    title4: "Счетчики",
+    title5: "Контакты",
 };
-export const secondFooter2 ={
-    header:"Компания",
-    content1:"Условия пользования",
-    content2:"Перс. данные",
-    content3:"Контакты",
-        
+
+export const collum3 = {
+    title1: "Компания",
+    title2: "Условия пользования",
+    title3: "Перс. данные",
+    title4: "Контакты",
 };
-export const secondFooter3 = {
-    header:"Контакты",
-    content1:"ул. Профессора Поздеева, 13, к.Г, Пермь",
-    content2:"+7 (342) 2-198-520",
-    content3:"info@pstu.ru",
+
+export const collum4 = {
+    title: "Контакты",
+    type1: "street_contacts",
+    title1: "ул. Профессора Поздеева, 13, к.Г, Пермь",
+    type2: "number",
+    title2: "+7 (342) 2-198-520",
+    type3: "pstu_ru",
+    title3: "info@pstu.ru",
 };
+
 export const footer2Data = {
-    png,
-    secondFooter1,
-    secondFooter2,
-    secondFooter3,
+    collum1,
+    collum2,
+    collum3,
+    collum4,
 };

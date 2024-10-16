@@ -1,68 +1,69 @@
-
-export const createPngTemplate = ({src, alt, type, title}) => {
+export const createCollum1Template = ({src, alt, type, title}) => {
     return `
         <div class="Footer_Footer_png">
-            <img src="${src}" alt="${alt}"/ >
-            <p class ="${type}">${title}</p>
+            <img src="${src}" alt="${alt}" />
+            <p class="${type}">${title}</p>
         </div>
     `;
 };
-export const createSecondFooter2Template = ({header, content1, content2, content3, content4}) => {
+
+export const createCollum2Template = ({title1, title2, title3, title4, title5}) => {
     return `
-        <nav class="nedurak">
-            <h12>${header} </h12>
-            <ul class="Footer_Footer_company">
-                <li><a href="#!">${content1}</a></li>
-                <li><a href="#!">${content2}</a></li>
-                <li><a href="#!">${content3}</a></li>
-            </ul>
-        </nav> 
-   
-    `; 
-};
-export  const createSecondFooter1Template = ({header, content1, content2, content3})=>{
-    return `
-        <nav class = "yadurak">
-            <h11>"${header}"</h11>
+        <nav class="yadurak">
+            <h11>${title1}</h11>
             <ul class="Footer_Footer_links">
-                <li><a href="#!">${content1}</a></li>
-                <li><a href="#!">${content2}</a></li>
-                <li><a href="#!">${content3}</a></li>
-                <li><a href="#!">${content4}</a></li>
+                <li><a href="#!">${title2}</a></li>
+                <li><a href="#!">${title3}</a></li>
+                <li><a href="#!">${title4}</a></li>
+                <li><a href="#!">${title5}</a></li>
             </ul>
         </nav>
     `;
-
 };
-export const createSecondFooter3Template = ({header, content1, content2, content3}) => {
+
+export const createCollum3Template = ({title1, title2, title3, title4}) => {
+    return `
+        <nav class="nedurak">
+            <h12>${title1}</h12>
+            <ul class="Footer_Footer_company">
+                <li><a href="#!">${title2}</a></li>
+                <li><a href="#!">${title3}</a></li>
+                <li><a href="#!">${title4}</a></li>
+            </ul>
+        </nav>
+    `;
+};
+
+export const createCollum4Template = ({title, type1, title1, type2, title2, type3, title3}) => {
     return `
         <div class="Footer_Footer_contacts">
-                <h13>${header}</h13>
-                <p class ="street_contacts">${content1}</p>
-                <p class ="number">${content2}</p>
-                <p class = "pstu_ru">${content3}</p>
+            <h13>${title}</h13>
+            <p class="${type1}">${title1}</p>
+            <p class="${type2}">${title2}</p>
+            <p class="${type3}">${title3}</p>
         </div>
     `;
 };
-export const footer2Template=({
-    png,
-    secondFooter1,
-    secondFooter2,
-    secondFooter3,
+
+export const footer2Template = ({
+    collum1,
+    collum2,
+    collum3,
+    collum4,
 }) => {
-    const pngTemplate = createPngTemplate(png);
-    const secondFooter1Template = createSecondFooter1Template(secondFooter1);
-    const secondFooter2Template = createSecondFooter2Template(secondFooter2);
-    const secondFooter3Template = createSecondFooter3Template(secondFooter3);
+    const collum1Template = createCollum1Template(collum1);
+    const collum2Template = createCollum2Template(collum2);
+    const collum3Template = createCollum3Template(collum3);
+    const collum4Template = createCollum4Template(collum4);
 
-    const resultTemplate=`
+    const resultTemplate = `
         <div class="Footer_Footer">
-            ${pngTemplate}
-            ${secondFooter1Template}
-            ${secondFooter2Template}
-            ${secondFooter3Template}
+            ${collum1Template}
+            ${collum2Template}
+            ${collum3Template}
+            ${collum4Template}
         </div>
-        `;
-    return resultTemplate;
+    `;
 
+    return resultTemplate;
 };

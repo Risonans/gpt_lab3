@@ -1,17 +1,19 @@
-export const createTextTemplate = ({type, title})=>{
+export const createCopyrightTemplate = (copyright) =>{
     return `
-        <p class="${type}">${title}</p>
+        <p class="footer_03">${copyright}</p>
     `;
-};
-export const footer3Template=({
-    text,
+}
+
+export const footer3Template = ({
+    copyright,
 }) => {
-    const textTemplate= createTextTemplate(text);
+    const copyrightTemplate = createCopyrightTemplate(copyright);
 
     const resultTemplate = `
         <div class="Footer_Footer_Footer">
-            ${textTemplate}
-        </div>  
-        `;
+            ${copyrightTemplate}
+        </div>
+    `;
+
     return resultTemplate;
 };
