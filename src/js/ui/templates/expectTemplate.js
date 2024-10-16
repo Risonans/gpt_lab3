@@ -1,6 +1,5 @@
 export const createImageTemplate = ({alt, src, type}) => {
     return `
-        <img src="${src}" alt="${alt}" class="${type} />
     `;
 };
 
