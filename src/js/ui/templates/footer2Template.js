@@ -1,56 +1,63 @@
-export const createCollum1Template = ({src, alt, type, title}) => {
+export const createCollum1Template = ({ items }) => {
     return `
         <div class="Footer_Footer_png">
-            <img src="${src}" alt="${alt}" />
-            <p class="${type}">${title}</p>
+            ${items
+                .map(
+                    ({ src, alt, type, title }) => `
+                    <img src="${src}" alt="${alt}" />
+                    <p class="${type}">${title}</p>
+                `
+                )
+                .join('')}
         </div>
     `;
 };
 
-export const createCollum2Template = ({title1, title2, title3, title4, title5}) => {
+export const createCollum2Template = ({ items }) => {
     return `
         <nav class="yadurak">
-            <h11>${title1}</h11>
+            <h11>${items[0]?.title || ''}</h11>
             <ul class="Footer_Footer_links">
-                <li><a href="#!">${title2}</a></li>
-                <li><a href="#!">${title3}</a></li>
-                <li><a href="#!">${title4}</a></li>
-                <li><a href="#!">${title5}</a></li>
+                ${items
+                    .slice(1)
+                    .map(({ title }) => `<li><a href="#!">${title}</a></li>`)
+                    .join('')}
             </ul>
         </nav>
     `;
 };
 
-export const createCollum3Template = ({title1, title2, title3, title4}) => {
+export const createCollum3Template = ({ items }) => {
     return `
         <nav class="nedurak">
-            <h12>${title1}</h12>
+            <h12>${items[0]?.title || ''}</h12>
             <ul class="Footer_Footer_company">
-                <li><a href="#!">${title2}</a></li>
-                <li><a href="#!">${title3}</a></li>
-                <li><a href="#!">${title4}</a></li>
+                ${items
+                    .slice(1)
+                    .map(({ title }) => `<li><a href="#!">${title}</a></li>`)
+                    .join('')}
             </ul>
         </nav>
     `;
 };
 
-export const createCollum4Template = ({title, type1, title1, type2, title2, type3, title3}) => {
+export const createCollum4Template = ({ items }) => {
     return `
         <div class="Footer_Footer_contacts">
-            <h13>${title}</h13>
-            <p class="${type1}">${title1}</p>
-            <p class="${type2}">${title2}</p>
-            <p class="${type3}">${title3}</p>
+            <h13>${items[0]?.title || ''}</h13>
+            ${items
+                .slice(1)
+                .map(
+                    ({ type, title }) => `
+                    <p class="${type}">${title}</p>
+                `
+                )
+                .join('')}
         </div>
     `;
 };
 
-export const footer2Template = ({
-    collum1,
-    collum2,
-    collum3,
-    collum4,
-}) => {
+export const footer2Template = ({ collum1, collum2, collum3, collum4 }) => {
     const collum1Template = createCollum1Template(collum1);
     const collum2Template = createCollum2Template(collum2);
     const collum3Template = createCollum3Template(collum3);
