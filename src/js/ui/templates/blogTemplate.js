@@ -71,22 +71,22 @@ export const createBlog_card_2_Template = ({ src, data, title_1, button: {href, 
 
 
 
-export const blogTemplate = ({
-  blog_card_1_Data,
+export const blogTemplate = (blogData) => {
+/*   blog_card_1_Data,
   blog_card_2_Data,
   blog_card_3_Data,
   blog_card_4_Data,
-  blog_card_5_Data,
-}) => {
-  const blog_card_1_Template = createBlog_card_1_Template(blog_card_1_Data);
+  blog_card_5_Data, */
 
-  const blog_card_2_Template = createBlog_card_2_Template(blog_card_2_Data);
+  const blog_card_1_Template = createBlog_card_1_Template(blogData[0]);
 
-  const blog_card_3_Template = createBlog_card_2_Template(blog_card_3_Data);
+  const blog_card_2_Template = createBlog_card_2_Template(blogData[1]);
 
-  const blog_card_4_Template = createBlog_card_2_Template(blog_card_4_Data);
+  const blog_card_3_Template = createBlog_card_2_Template(blogData[2]);
 
-  const blog_card_5_Template = createBlog_card_2_Template(blog_card_5_Data);
+  const blog_card_4_Template = createBlog_card_2_Template(blogData[3]);
+
+  const blog_card_5_Template = createBlog_card_2_Template(blogData[4]);
 
   const resultTemplate = `
         <div class="con_1">
