@@ -1,6 +1,6 @@
-export const footer2Data = [
+const footer2Data = [
     {
-        column: 1,
+        /* column: 1, */
         items: [
             {
                 src: "./assets/img/logo.svg",
@@ -11,7 +11,7 @@ export const footer2Data = [
         ],
     },
     {
-        column: 2,
+        /* column: 2, */
         items: [
             { title: "Ссылки" },
             { title: "Оверонны" },
@@ -21,7 +21,7 @@ export const footer2Data = [
         ],
     },
     {
-        column: 3,
+        /* column: 3, */
         items: [
             { title: "Компания" },
             { title: "Условия пользования" },
@@ -30,7 +30,7 @@ export const footer2Data = [
         ],
     },
     {
-        column: 4,
+        /* column: 4, */
         items: [
             {
                 type: "street_contacts",
@@ -47,3 +47,5 @@ export const footer2Data = [
         ],
     },
 ];
+
+export default footer2Data;
