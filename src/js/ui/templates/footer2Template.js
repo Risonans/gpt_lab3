@@ -20,7 +20,7 @@ export const createCollum2Template = ({ items }) => {
             <ul class="Footer_Footer_links">
                 ${items
                     .slice(1)
-                    .map(({ title }) => `<li><a href="#!">${title}</a></li>`)
+                    .map(({ href }) => `<li><a href="#!">${href}</a></li>`)
                     .join('')}
             </ul>
         </nav>
