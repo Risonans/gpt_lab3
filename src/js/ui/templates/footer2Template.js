@@ -57,11 +57,11 @@ export const createCollum4Template = ({ items }) => {
     `;
 };
 
-export const footer2Template = ({ collum1, collum2, collum3, collum4 }) => {
-    const collum1Template = createCollum1Template(collum1);
-    const collum2Template = createCollum2Template(collum2);
-    const collum3Template = createCollum3Template(collum3);
-    const collum4Template = createCollum4Template(collum4);
+export const footer2Template = (footer2Data) => {
+    const collum1Template = createCollum1Template(footer2Data[0]);
+    const collum2Template = createCollum2Template(footer2Data[1]);
+    const collum3Template = createCollum3Template(footer2Data[2]);
+    const collum4Template = createCollum4Template(footer2Data[3]);
 
     const resultTemplate = `
         <div class="Footer_Footer">
@@ -74,3 +74,4 @@ export const footer2Template = ({ collum1, collum2, collum3, collum4 }) => {
 
     return resultTemplate;
 };
+
